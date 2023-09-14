@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle-metadata>
+    <module>
+        <check fully-qualified-name="com.puppycrawl.tools.checkstyle.checks.custom.SingleLineIfWithBracesCheck"
+               name="SingleLineIfWithBraces"
+               parent="com.puppycrawl.tools.checkstyle.TreeWalker">
+            <message-keys>
+                <message-key key="custom.single_line_if_check"/>
+            </message-keys>
+        </check>
+    </module>
+</checkstyle-metadata>

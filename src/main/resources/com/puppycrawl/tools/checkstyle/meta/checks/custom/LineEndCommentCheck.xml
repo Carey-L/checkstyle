@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle-metadata>
+    <module>
+        <check fully-qualified-name="com.puppycrawl.tools.checkstyle.checks.custom.LineEndCommentCheck"
+               name="LineEndComment"
+               parent="com.puppycrawl.tools.checkstyle.TreeWalker">
+            <message-keys>
+                <message-key key="custom.line_end_annotation"/>
+            </message-keys>
+        </check>
+    </module>
+</checkstyle-metadata>

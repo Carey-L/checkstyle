@@ -406,6 +406,7 @@ public class PackageObjectFactory implements ModuleFactory {
         fillChecksFromAnnotationPackage();
         fillChecksFromBlocksPackage();
         fillChecksFromCodingPackage();
+        fillChecksFromCustomPackage();
         fillChecksFromDesignPackage();
         fillChecksFromHeaderPackage();
         fillChecksFromImportsPackage();
@@ -575,6 +576,16 @@ public class PackageObjectFactory implements ModuleFactory {
                 BASE_PACKAGE + ".checks.coding.MatchXpathCheck");
         NAME_TO_FULL_MODULE_NAME.put("UnusedLocalVariableCheck",
                 BASE_PACKAGE + ".checks.coding.UnusedLocalVariableCheck");
+    }
+
+    /**
+     * Fill short-to-full module names map with Checks from custom package.
+     */
+    private static void fillChecksFromCustomPackage() {
+        NAME_TO_FULL_MODULE_NAME.put("LineEndCommentCheck",
+                BASE_PACKAGE + ".checks.custom.LineEndCommentCheck");
+        NAME_TO_FULL_MODULE_NAME.put("SingleLineIfWithBracesCheck",
+                BASE_PACKAGE + ".checks.custom.SingleLineIfWithBracesCheck");
     }
 
     /**
